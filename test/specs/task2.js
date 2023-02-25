@@ -6,7 +6,7 @@ describe('User Open Application',() => {
 
 describe('User Submit Form Data Application',() => {
   it('User can input field name: Gusti Ramadhan', async() => {
-      await $('[id="com.fghilmany.dietmealapp:id/et_name"]').setValue("Gusti Ramadhan");
+      await $('[text="Name"]').setValue("Gusti Ramadhan");
   })
   it('User can input field weight: 73', async() => {
       await $('[text="Weight"]').setValue(73);
